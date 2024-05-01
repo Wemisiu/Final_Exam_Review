@@ -15,11 +15,32 @@ int main() {
 
 cout << *ptr;
 
- ptr = ptr - 1;
+ ptr =ptr - 1;
 
 cout << *ptr;
 
-return 0;
+double * ptr2;
+
+ptr = arr + 4;
+
+cout << *ptr + *ptr2;
+
+
+
+for(int i = 0; i < 5; i++) {
+
+if(ptr == i) {
+
+    // skip
+}
+
+cout << arr[i] << " ";
+
+}
+
+
+
+
 
   
 }
