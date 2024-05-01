@@ -64,7 +64,7 @@ void print(TreeNode * current) {
 
     if(current == nullptr) {
 
-      cout << "";
+      return;
     }
 
     else {

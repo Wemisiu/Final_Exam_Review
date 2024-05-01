@@ -7,6 +7,8 @@ using namespace std;
 int main() {
     TreeNode * root = buildTree();
 
+    print(root);
+
     
   
 }
