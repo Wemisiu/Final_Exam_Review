@@ -8,7 +8,5 @@ int main() {
     TreeNode * root = buildTree();
 
     
-    rightmost(root);
-    cout << endl;
-    leftmost(root);
+  
 }

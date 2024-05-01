@@ -60,6 +60,23 @@ void leftmost(TreeNode * current) {
      
 }
 
+void print(TreeNode * current) {
+
+    if(current == nullptr) {
+
+        cout << "";
+    }
+
+    else {
+
+        cout << current -> data;
+
+        print(current->right);
+        print(current-> left);
+    }
+
+}
+
 
 
 // check if node is a leaf
