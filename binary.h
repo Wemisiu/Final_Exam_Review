@@ -13,34 +13,51 @@ TreeNode* buildTree() {
     // manually create the tree for the following values
         // returns a pointer to the root node
     // 13, 19, 15, 16, 2, 6, 7, 18, 12, 3
-    TreeNode * root = new TreeNode(13);
+    TreeNode * root = new TreeNode(100);
     
     // children of root (level 1)
-    root ->right = new TreeNode(19);
-    root->left = new TreeNode(2);
+    root ->right = new TreeNode(200);
+    root->left = new TreeNode(10);
 
     // children of 19 (lvl 2)
-    root->right->left = new TreeNode(15);
+    root->right->right = new TreeNode(202);
 
     // children of 2 (lvl 2)
-    root->left->right = new TreeNode(6);
+    root->left->left = new TreeNode(5);
 
     // children of 15 (lvl 3)
-    root->right->left->right = new TreeNode(16);
+    root->left->left->right = new TreeNode(6);
 
-    // children of 6 (lvl 3)
-    root->left->right->left = new TreeNode(3);
-    root->left->right->right = new TreeNode(7);
 
-    // children of 3 (none)
-
-    // children of 7 (lvl 4)
-    root->left->right->right->right = new TreeNode(12);
-
-    // children of 16 (lvl 4)
-    root->right->left->right->right = new TreeNode(18);
 
     return root;
+}
+
+
+void rightmost(TreeNode * current) {
+    if(current -> right == nullptr) {
+
+        cout <<  current -> data;
+    }
+
+    else {
+
+        rightmost(current->right);
+    }
+}
+
+void leftmost(TreeNode * current) {
+
+    if (current -> left == nullptr)
+     {
+        cout << current -> data;
+     }
+
+     else {
+
+        leftmost(current-> left);
+     }
+     
 }
 
 
