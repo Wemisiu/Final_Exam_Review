@@ -15,6 +15,10 @@ ptr = arr + 3;
 
 cout << *ptr;
 
+ptr - 1;
+
+cout << *ptr;
+
 
   
 }
