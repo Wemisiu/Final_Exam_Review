@@ -7,18 +7,19 @@ using namespace std;
 
 int main() {
    
-double arr [] = {9.2,0.3,-6.6,10.1,0.02};
+ double arr [] = {9.2,0.3,-6.6,10.1,0.02};
 
-double  * ptr; 
+ double  * ptr; 
 
-ptr = arr + 3;
-
-cout << *ptr;
-
-ptr - 1;
+ ptr = arr + 2;
 
 cout << *ptr;
 
+ ptr = ptr - 1;
+
+cout << *ptr;
+
+return 0;
 
   
 }
