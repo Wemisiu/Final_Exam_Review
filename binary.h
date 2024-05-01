@@ -62,16 +62,12 @@ void leftmost(TreeNode * current) {
 
 void print(TreeNode * current) {
 
-
-
     if(current == nullptr) {
 
       return;
     }
 
     else {
-
-        
 
         print(current->right);  
 
@@ -80,7 +76,24 @@ void print(TreeNode * current) {
         print(current-> left);
     }
 
+
+
+
+
 }
+
+bool checkleafnode(TreeNode * current) {
+
+    if(current-> right == nullptr && current -> left == nullptr)
+    {
+        return true;
+    }
+
+    else {
+        return false;
+    }
+}
+
 
 
 
