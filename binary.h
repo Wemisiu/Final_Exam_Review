@@ -62,6 +62,8 @@ void leftmost(TreeNode * current) {
 
 void print(TreeNode * current) {
 
+
+
     if(current == nullptr) {
 
       return;
@@ -69,9 +71,12 @@ void print(TreeNode * current) {
 
     else {
 
-        cout << current -> data;
+        
 
-        print(current->right);
+        print(current->right);  
+
+        cout << current -> data << " " ;
+
         print(current-> left);
     }
 
