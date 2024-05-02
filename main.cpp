@@ -6,9 +6,11 @@ using namespace std;
 
 
 int main() {
+
+TreeNode * root = buildTree();
    
 
-cout << "Hello World!";
+rightmost(root);
 
 
 
