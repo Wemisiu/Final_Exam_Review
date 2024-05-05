@@ -11,6 +11,7 @@ TreeNode * root = buildTree();
    
 
 rightmost(root);
+leftmost(root);
 
 
 
